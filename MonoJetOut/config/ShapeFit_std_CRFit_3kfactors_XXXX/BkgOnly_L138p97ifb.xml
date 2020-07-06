@@ -11,7 +11,6 @@
   <Input>config/ShapeFit_std_CRFit_3kfactors_XXXX/BkgOnly_L138p97ifb_CR1e0b_250_cuts.xml</Input>
   <Input>config/ShapeFit_std_CRFit_3kfactors_XXXX/BkgOnly_L138p97ifb_CR2mu_250_cuts.xml</Input>
   <Input>config/ShapeFit_std_CRFit_3kfactors_XXXX/BkgOnly_L138p97ifb_CR2e_250_cuts.xml</Input>
-  <Input>config/ShapeFit_std_CRFit_3kfactors_XXXX/BkgOnly_L138p97ifb_CR1L1b_250_cuts.xml</Input>
   <Input>config/ShapeFit_std_CRFit_3kfactors_XXXX/BkgOnly_L138p97ifb_SR_300_cuts.xml</Input>
   <Input>config/ShapeFit_std_CRFit_3kfactors_XXXX/BkgOnly_L138p97ifb_CR1e0b_300_cuts.xml</Input>
   <Input>config/ShapeFit_std_CRFit_3kfactors_XXXX/BkgOnly_L138p97ifb_CR2mu_300_cuts.xml</Input>
