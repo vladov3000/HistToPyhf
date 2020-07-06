@@ -33,8 +33,10 @@ Procedure (Extract xml from Histfitter workspace):
     nohup HistFitter.py -t -w -F bkg -m ALL -f -D "corrMatrix" -u "--strategy 1111 --suffix _3kfactors_XXXX --years 15,16,17,18" -x ../WSMaker_splitTop.py > log_3kfactors_XXXX.log &
     tail -f log_3kfactors_XXXX.log # See logs to make sure everything is running
     # It may not be neccessary for the whole analysis to run, just for the config to finish
+    cd ../config
     mv ShapeFit_std_CRFit_3kfactors_XXXX /eos/home-*/USERNAME/ShapeFit_std_CRFit_3kfactors_XXXX
     exit
+    # Compare outputs with /eos/home-v/vovechki/MonoJetOut
 
 The rest of the work is done in the python notebook.
 

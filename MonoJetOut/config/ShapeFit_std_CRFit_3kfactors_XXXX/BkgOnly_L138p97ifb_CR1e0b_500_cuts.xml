@@ -1,0 +1,484 @@
+<!DOCTYPE Channel SYSTEM '../HistFactorySchema.dtd'>
+
+<Channel Name="CR1e0b_500_cuts">
+
+  <Data HistoName="hdata_500_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" />
+
+  <StatErrorConfig RelErrorThreshold="0.01" ConstraintType="Gaussian"/>
+
+  <Sample Name="Znunu_500" HistoName="hZnunu_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+    <NormFactor Name="kWGZ" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="Wmunu_500" HistoName="hWmunu_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+    <NormFactor Name="kWGZ" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="Wenu_500" HistoName="hWenu_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="EG_RESOLUTION_ALL" High="1.0001" Low="1.00063" />
+    <OverallSys Name="EG_SCALE_ALL" High="0.99185" Low="1.00867" />
+    <OverallSys Name="EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR" High="1.02213" Low="0.97787" />
+    <OverallSys Name="EL_EFF_Iso_TOTAL_1NPCOR_PLUS_UNCOR" High="1.0025" Low="0.9975" />
+    <OverallSys Name="EL_EFF_Reco_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00165" Low="0.99835" />
+    <OverallSys Name="EL_EFF_Trigger_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00169" Low="0.99831" />
+    <OverallSys Name="FT_EFF_B_systematics" High="0.999009" Low="1.00099" />
+    <OverallSys Name="FT_EFF_C_systematics" High="0.998691" Low="1.00132" />
+    <OverallSys Name="FT_EFF_Light_systematics" High="0.995523" Low="1.00448" />
+    <OverallSys Name="FT_EFF_extrapolation" High="0.997295" Low="1.00271" />
+    <OverallSys Name="JET_EffectiveNP_Detector1" High="1.00132" Low="0.99878" />
+    <OverallSys Name="JET_EffectiveNP_Mixed1" High="1.01437" Low="0.98532" />
+    <OverallSys Name="JET_EffectiveNP_Mixed2" High="0.99666" Low="1.00313" />
+    <OverallSys Name="JET_EffectiveNP_Mixed3" High="1.00032" Low="0.99965" />
+    <OverallSys Name="JET_EffectiveNP_Modelling1" High="1.02059" Low="0.97987" />
+    <OverallSys Name="JET_EffectiveNP_Modelling2" High="1.006" Low="0.99363" />
+    <OverallSys Name="JET_EffectiveNP_Modelling3" High="0.9984" Low="1.00149" />
+    <OverallSys Name="JET_EffectiveNP_Modelling4" High="1.00107" Low="0.99885" />
+    <OverallSys Name="JET_EffectiveNP_Statistical1" High="1.00437" Low="0.99514" />
+    <OverallSys Name="JET_EffectiveNP_Statistical2" High="1.00139" Low="0.99867" />
+    <OverallSys Name="JET_EffectiveNP_Statistical3" High="0.99751" Low="1.00247" />
+    <OverallSys Name="JET_EffectiveNP_Statistical4" High="0.99892" Low="1.00105" />
+    <OverallSys Name="JET_EffectiveNP_Statistical5" High="0.99963" Low="1.00039" />
+    <OverallSys Name="JET_EffectiveNP_Statistical6" High="1.00089" Low="0.99916" />
+    <OverallSys Name="JET_EtaIntercalibration_Modelling" High="1.00478" Low="0.99543" />
+    <OverallSys Name="JET_EtaIntercalibration_TotalStat" High="1.00087" Low="0.9992" />
+    <OverallSys Name="JET_Flavor_Composition" High="1.01394" Low="0.98604" />
+    <OverallSys Name="JET_Flavor_Response" High="0.98629" Low="1.01384" />
+    <OverallSys Name="JET_JER_DataVsMC_MC16" High="1.00042" Low="0.99958" />
+    <OverallSys Name="JET_JER_EffectiveNP_1" High="1.00706" Low="0.99294" />
+    <OverallSys Name="JET_JER_EffectiveNP_10" High="1.00204" Low="1.00061" />
+    <OverallSys Name="JET_JER_EffectiveNP_11" High="1.00014" Low="1.00157" />
+    <OverallSys Name="JET_JER_EffectiveNP_12restTerm" High="1.00263" Low="0.99737" />
+    <OverallSys Name="JET_JER_EffectiveNP_2" High="0.99941" Low="1.00877" />
+    <OverallSys Name="JET_JER_EffectiveNP_3" High="0.99937" Low="1.00706" />
+    <OverallSys Name="JET_JER_EffectiveNP_4" High="1.00085" Low="1.0015" />
+    <OverallSys Name="JET_JER_EffectiveNP_5" High="1.00393" Low="1.0004" />
+    <OverallSys Name="JET_JER_EffectiveNP_6" High="0.99993" Low="1.00248" />
+    <OverallSys Name="JET_JER_EffectiveNP_7" High="1.00216" Low="1.00001" />
+    <OverallSys Name="JET_JER_EffectiveNP_8" High="1.00383" Low="1.00004" />
+    <OverallSys Name="JET_JER_EffectiveNP_9" High="1.00083" Low="1.00028" />
+    <OverallSys Name="JET_JvtEfficiency" High="1.00083" Low="0.99886" />
+    <OverallSys Name="JET_Pileup_OffsetMu" High="1.00156" Low="0.99871" />
+    <OverallSys Name="JET_Pileup_OffsetNPV" High="1.00271" Low="0.99681" />
+    <OverallSys Name="JET_Pileup_PtTerm" High="1.00174" Low="0.99789" />
+    <OverallSys Name="JET_Pileup_RhoTopology" High="1.00411" Low="0.99552" />
+    <OverallSys Name="JET_PunchThrough_MC16" High="1.00043" Low="0.99953" />
+    <OverallSys Name="MET_SoftTrk_ResoPara" High="1.00189" Low="0.99811" />
+    <OverallSys Name="MET_SoftTrk_ResoPerp" High="1.00157" Low="0.99843" />
+    <OverallSys Name="MET_SoftTrk_Scale" High="1.00153" Low="0.99811" />
+    <OverallSys Name="PRW_DATASF" High="0.99811" Low="1.00192" />
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+    <OverallSys Name="vjets_d1K_NNLO" High="1.02341" Low="0.976593" />
+    <OverallSys Name="vjets_d1kappa_EW" High="1.00225" Low="0.997749" />
+    <OverallSys Name="vjets_d2K_NNLO" High="0.994034" Low="1.00597" />
+    <OverallSys Name="vjets_d2kappa_EW_W" High="1.01005" Low="0.989947" />
+    <OverallSys Name="vjets_d3K_NNLO" High="1.00446" Low="0.995537" />
+    <OverallSys Name="vjets_d3kappa_EW_W" High="1.00222" Low="0.997775" />
+    <OverallSys Name="vjets_dK_NNLO_mix" High="1.01437" Low="0.985627" />
+    <OverallSys Name="vjets_dK_PDF" High="1.01238" Low="0.987624" />
+    <NormFactor Name="kWGZ" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="Wtaunu_500" HistoName="hWtaunu_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="EG_RESOLUTION_ALL" High="1.00068" Low="1.00041" />
+    <OverallSys Name="EG_SCALE_ALL" High="1.00127" Low="0.99712" />
+    <OverallSys Name="EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR" High="1.01575" Low="0.98425" />
+    <OverallSys Name="EL_EFF_Iso_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00186" Low="0.99814" />
+    <OverallSys Name="EL_EFF_Reco_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00156" Low="0.99844" />
+    <OverallSys Name="EL_EFF_Trigger_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00159" Low="0.99841" />
+    <OverallSys Name="FT_EFF_B_systematics" High="0.998972" Low="1.00103" />
+    <OverallSys Name="FT_EFF_C_systematics" High="0.998633" Low="1.00137" />
+    <OverallSys Name="FT_EFF_Light_systematics" High="0.995479" Low="1.00453" />
+    <OverallSys Name="FT_EFF_extrapolation" High="0.997153" Low="1.00285" />
+    <OverallSys Name="JET_EffectiveNP_Detector1" High="1.00132" Low="0.99878" />
+    <OverallSys Name="JET_EffectiveNP_Mixed1" High="1.01437" Low="0.98532" />
+    <OverallSys Name="JET_EffectiveNP_Mixed2" High="0.99666" Low="1.00313" />
+    <OverallSys Name="JET_EffectiveNP_Mixed3" High="1.00032" Low="0.99965" />
+    <OverallSys Name="JET_EffectiveNP_Modelling1" High="1.02059" Low="0.97987" />
+    <OverallSys Name="JET_EffectiveNP_Modelling2" High="1.006" Low="0.99363" />
+    <OverallSys Name="JET_EffectiveNP_Modelling3" High="0.9984" Low="1.00149" />
+    <OverallSys Name="JET_EffectiveNP_Modelling4" High="1.00107" Low="0.99885" />
+    <OverallSys Name="JET_EffectiveNP_Statistical1" High="1.00437" Low="0.99514" />
+    <OverallSys Name="JET_EffectiveNP_Statistical2" High="1.00139" Low="0.99867" />
+    <OverallSys Name="JET_EffectiveNP_Statistical3" High="0.99751" Low="1.00247" />
+    <OverallSys Name="JET_EffectiveNP_Statistical4" High="0.99892" Low="1.00105" />
+    <OverallSys Name="JET_EffectiveNP_Statistical5" High="0.99963" Low="1.00039" />
+    <OverallSys Name="JET_EffectiveNP_Statistical6" High="1.00089" Low="0.99916" />
+    <OverallSys Name="JET_EtaIntercalibration_Modelling" High="1.00478" Low="0.99543" />
+    <OverallSys Name="JET_EtaIntercalibration_TotalStat" High="1.00087" Low="0.9992" />
+    <OverallSys Name="JET_Flavor_Composition" High="1.01394" Low="0.98604" />
+    <OverallSys Name="JET_Flavor_Response" High="0.98629" Low="1.01384" />
+    <OverallSys Name="JET_JER_DataVsMC_MC16" High="1.00042" Low="0.99958" />
+    <OverallSys Name="JET_JER_EffectiveNP_1" High="1.00706" Low="0.99294" />
+    <OverallSys Name="JET_JER_EffectiveNP_10" High="1.00204" Low="1.00061" />
+    <OverallSys Name="JET_JER_EffectiveNP_11" High="1.00014" Low="1.00157" />
+    <OverallSys Name="JET_JER_EffectiveNP_12restTerm" High="1.00263" Low="0.99737" />
+    <OverallSys Name="JET_JER_EffectiveNP_2" High="0.99941" Low="1.00877" />
+    <OverallSys Name="JET_JER_EffectiveNP_3" High="0.99937" Low="1.00706" />
+    <OverallSys Name="JET_JER_EffectiveNP_4" High="1.00085" Low="1.0015" />
+    <OverallSys Name="JET_JER_EffectiveNP_5" High="1.00393" Low="1.0004" />
+    <OverallSys Name="JET_JER_EffectiveNP_6" High="0.99993" Low="1.00248" />
+    <OverallSys Name="JET_JER_EffectiveNP_7" High="1.00216" Low="1.00001" />
+    <OverallSys Name="JET_JER_EffectiveNP_8" High="1.00383" Low="1.00004" />
+    <OverallSys Name="JET_JER_EffectiveNP_9" High="1.00083" Low="1.00028" />
+    <OverallSys Name="JET_JvtEfficiency" High="1.00083" Low="0.99886" />
+    <OverallSys Name="JET_Pileup_OffsetMu" High="1.00156" Low="0.99871" />
+    <OverallSys Name="JET_Pileup_OffsetNPV" High="1.00271" Low="0.99681" />
+    <OverallSys Name="JET_Pileup_PtTerm" High="1.00174" Low="0.99789" />
+    <OverallSys Name="JET_Pileup_RhoTopology" High="1.00411" Low="0.99552" />
+    <OverallSys Name="JET_PunchThrough_MC16" High="1.00043" Low="0.99953" />
+    <OverallSys Name="MET_SoftTrk_ResoPara" High="0.99668" Low="1.00332" />
+    <OverallSys Name="MET_SoftTrk_ResoPerp" High="0.99598" Low="1.00402" />
+    <OverallSys Name="MET_SoftTrk_Scale" High="0.99864" Low="1.00177" />
+    <OverallSys Name="MUON_SAGITTA_RESBIAS" High="1.00009" Low="0.99991" />
+    <OverallSys Name="PRW_DATASF" High="0.99855" Low="1.00448" />
+    <OverallSys Name="TAUS_TRUEHADTAU_EFF_JETID_SYST" High="0.99435" Low="1.00566" />
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+    <OverallSys Name="vjets_d1K_NNLO" High="1.0234" Low="0.976596" />
+    <OverallSys Name="vjets_d1kappa_EW" High="1.00227" Low="0.99773" />
+    <OverallSys Name="vjets_d2K_NNLO" High="0.994107" Low="1.00589" />
+    <OverallSys Name="vjets_d2kappa_EW_W" High="1.01007" Low="0.989929" />
+    <OverallSys Name="vjets_d3K_NNLO" High="1.00447" Low="0.995531" />
+    <OverallSys Name="vjets_d3kappa_EW_W" High="1.00224" Low="0.997762" />
+    <OverallSys Name="vjets_dK_NNLO_mix" High="1.0144" Low="0.985604" />
+    <OverallSys Name="vjets_dK_PDF" High="1.01239" Low="0.987607" />
+    <NormFactor Name="kWGZ" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="Zmumu_500" HistoName="hZmumu_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+    <NormFactor Name="kWGZ" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="Zee_500" HistoName="hZee_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+    <NormFactor Name="kWGZ" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="Ztautau_500" HistoName="hZtautau_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="EG_RESOLUTION_ALL" High="0.99948" Low="1.00144" />
+    <OverallSys Name="EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR" High="1.02471" Low="0.97529" />
+    <OverallSys Name="EL_EFF_Iso_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00266" Low="0.99734" />
+    <OverallSys Name="EL_EFF_Reco_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00168" Low="0.99832" />
+    <OverallSys Name="EL_EFF_Trigger_TOTAL_1NPCOR_PLUS_UNCOR" High="1.0017" Low="0.9983" />
+    <OverallSys Name="FT_EFF_B_systematics" High="0.998972" Low="1.00103" />
+    <OverallSys Name="FT_EFF_C_systematics" High="0.998633" Low="1.00137" />
+    <OverallSys Name="FT_EFF_Light_systematics" High="0.995479" Low="1.00453" />
+    <OverallSys Name="FT_EFF_extrapolation" High="0.997153" Low="1.00285" />
+    <OverallSys Name="JET_EffectiveNP_Detector1" High="1.00132" Low="0.99878" />
+    <OverallSys Name="JET_EffectiveNP_Mixed1" High="1.01437" Low="0.98532" />
+    <OverallSys Name="JET_EffectiveNP_Mixed2" High="0.99666" Low="1.00313" />
+    <OverallSys Name="JET_EffectiveNP_Mixed3" High="1.00032" Low="0.99965" />
+    <OverallSys Name="JET_EffectiveNP_Modelling1" High="1.02059" Low="0.97987" />
+    <OverallSys Name="JET_EffectiveNP_Modelling2" High="1.006" Low="0.99363" />
+    <OverallSys Name="JET_EffectiveNP_Modelling3" High="0.9984" Low="1.00149" />
+    <OverallSys Name="JET_EffectiveNP_Modelling4" High="1.00107" Low="0.99885" />
+    <OverallSys Name="JET_EffectiveNP_Statistical1" High="1.00437" Low="0.99514" />
+    <OverallSys Name="JET_EffectiveNP_Statistical2" High="1.00139" Low="0.99867" />
+    <OverallSys Name="JET_EffectiveNP_Statistical3" High="0.99751" Low="1.00247" />
+    <OverallSys Name="JET_EffectiveNP_Statistical4" High="0.99892" Low="1.00105" />
+    <OverallSys Name="JET_EffectiveNP_Statistical5" High="0.99963" Low="1.00039" />
+    <OverallSys Name="JET_EffectiveNP_Statistical6" High="1.00089" Low="0.99916" />
+    <OverallSys Name="JET_EtaIntercalibration_Modelling" High="1.00478" Low="0.99543" />
+    <OverallSys Name="JET_EtaIntercalibration_TotalStat" High="1.00087" Low="0.9992" />
+    <OverallSys Name="JET_Flavor_Composition" High="1.01394" Low="0.98604" />
+    <OverallSys Name="JET_Flavor_Response" High="0.98629" Low="1.01384" />
+    <OverallSys Name="JET_JER_DataVsMC_MC16" High="1.00042" Low="0.99958" />
+    <OverallSys Name="JET_JER_EffectiveNP_1" High="1.00706" Low="0.99294" />
+    <OverallSys Name="JET_JER_EffectiveNP_10" High="1.00204" Low="1.00061" />
+    <OverallSys Name="JET_JER_EffectiveNP_11" High="1.00014" Low="1.00157" />
+    <OverallSys Name="JET_JER_EffectiveNP_12restTerm" High="1.00263" Low="0.99737" />
+    <OverallSys Name="JET_JER_EffectiveNP_2" High="0.99941" Low="1.00877" />
+    <OverallSys Name="JET_JER_EffectiveNP_3" High="0.99937" Low="1.00706" />
+    <OverallSys Name="JET_JER_EffectiveNP_4" High="1.00085" Low="1.0015" />
+    <OverallSys Name="JET_JER_EffectiveNP_5" High="1.00393" Low="1.0004" />
+    <OverallSys Name="JET_JER_EffectiveNP_6" High="0.99993" Low="1.00248" />
+    <OverallSys Name="JET_JER_EffectiveNP_7" High="1.00216" Low="1.00001" />
+    <OverallSys Name="JET_JER_EffectiveNP_8" High="1.00383" Low="1.00004" />
+    <OverallSys Name="JET_JER_EffectiveNP_9" High="1.00083" Low="1.00028" />
+    <OverallSys Name="JET_JvtEfficiency" High="1.00083" Low="0.99886" />
+    <OverallSys Name="JET_Pileup_OffsetMu" High="1.00156" Low="0.99871" />
+    <OverallSys Name="JET_Pileup_OffsetNPV" High="1.00271" Low="0.99681" />
+    <OverallSys Name="JET_Pileup_PtTerm" High="1.00174" Low="0.99789" />
+    <OverallSys Name="JET_Pileup_RhoTopology" High="1.00411" Low="0.99552" />
+    <OverallSys Name="JET_PunchThrough_MC16" High="1.00043" Low="0.99953" />
+    <OverallSys Name="MET_SoftTrk_ResoPara" High="0.99902" Low="1.00098" />
+    <OverallSys Name="MET_SoftTrk_ResoPerp" High="0.99787" Low="1.00213" />
+    <OverallSys Name="MET_SoftTrk_Scale" High="0.99418" Low="1.0151" />
+    <OverallSys Name="MUON_EFF_RECO_SYS" High="0.99868" Low="1.00131" />
+    <OverallSys Name="PRW_DATASF" High="1.00735" Low="0.99376" />
+    <OverallSys Name="TAUS_TRUEHADTAU_EFF_JETID_SYST" High="0.99435" Low="1.00565" />
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+    <OverallSys Name="vjets_d1K_NNLO" High="1.02453" Low="0.975475" />
+    <OverallSys Name="vjets_d1kappa_EW" High="1.00204" Low="0.997958" />
+    <OverallSys Name="vjets_d2K_NNLO" High="0.994787" Low="1.00521" />
+    <OverallSys Name="vjets_d2kappa_EW_Z" High="1.00829" Low="0.991706" />
+    <OverallSys Name="vjets_d3kappa_EW_Z" High="1.00512" Low="0.994882" />
+    <OverallSys Name="vjets_dK_NNLO_mix" High="1.00577" Low="0.994226" />
+    <OverallSys Name="vjets_dK_PDF" High="1.01339" Low="0.986608" />
+    <NormFactor Name="kWGZ" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="ttbar_500" HistoName="httbar_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR" High="1.02283" Low="0.97717" />
+    <OverallSys Name="EL_EFF_Iso_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00261" Low="0.99739" />
+    <OverallSys Name="EL_EFF_Reco_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00161" Low="0.99839" />
+    <OverallSys Name="EL_EFF_Trigger_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00145" Low="0.99855" />
+    <OverallSys Name="FT_EFF_B_systematics" High="0.967619" Low="1.0327" />
+    <OverallSys Name="FT_EFF_C_systematics" High="0.997368" Low="1.00263" />
+    <OverallSys Name="FT_EFF_Light_systematics" High="0.997599" Low="1.00241" />
+    <OverallSys Name="FT_EFF_extrapolation" High="0.994194" Low="1.00581" />
+    <OverallSys Name="JET_EffectiveNP_Detector1" High="1.00197" Low="0.99808" />
+    <OverallSys Name="JET_EffectiveNP_Mixed1" High="1.01686" Low="0.98199" />
+    <OverallSys Name="JET_EffectiveNP_Mixed2" High="0.99667" Low="1.00295" />
+    <OverallSys Name="JET_EffectiveNP_Mixed3" High="1.00089" Low="0.99944" />
+    <OverallSys Name="JET_EffectiveNP_Modelling1" High="1.01985" Low="0.97948" />
+    <OverallSys Name="JET_EffectiveNP_Modelling2" High="1.00914" Low="0.991" />
+    <OverallSys Name="JET_EffectiveNP_Modelling3" High="0.9977" Low="1.00124" />
+    <OverallSys Name="JET_EffectiveNP_Modelling4" High="1.00166" Low="0.99928" />
+    <OverallSys Name="JET_EffectiveNP_Statistical1" High="1.00533" Low="0.99562" />
+    <OverallSys Name="JET_EffectiveNP_Statistical2" High="1.00127" Low="0.99772" />
+    <OverallSys Name="JET_EffectiveNP_Statistical3" High="0.99726" Low="1.00336" />
+    <OverallSys Name="JET_EffectiveNP_Statistical4" High="0.99912" Low="1.00056" />
+    <OverallSys Name="JET_EffectiveNP_Statistical5" High="0.99962" Low="0.99904" />
+    <OverallSys Name="JET_EffectiveNP_Statistical6" High="1.00164" Low="0.99899" />
+    <OverallSys Name="JET_EtaIntercalibration_Modelling" High="1.00533" Low="0.99786" />
+    <OverallSys Name="JET_EtaIntercalibration_NonClosure_posEta" High="0.99986" Low="1.0002" />
+    <OverallSys Name="JET_EtaIntercalibration_TotalStat" High="1.00033" Low="0.99936" />
+    <OverallSys Name="JET_Flavor_Composition" High="1.00152" Low="1.00127" />
+    <OverallSys Name="JET_Flavor_Response" High="0.99118" Low="1.01334" />
+    <OverallSys Name="JET_JER_DataVsMC_MC16" High="1.00157" Low="0.99843" />
+    <OverallSys Name="JET_JER_EffectiveNP_1" High="1.01329" Low="1.00003" />
+    <OverallSys Name="JET_JER_EffectiveNP_10" High="1.00382" Low="1.0012" />
+    <OverallSys Name="JET_JER_EffectiveNP_11" High="1.00242" Low="1.00254" />
+    <OverallSys Name="JET_JER_EffectiveNP_12restTerm" High="1.00636" Low="1.00003" />
+    <OverallSys Name="JET_JER_EffectiveNP_2" High="0.99922" Low="1.00557" />
+    <OverallSys Name="JET_JER_EffectiveNP_3" High="1.00353" Low="1.00548" />
+    <OverallSys Name="JET_JER_EffectiveNP_4" High="1.00527" Low="1.00034" />
+    <OverallSys Name="JET_JER_EffectiveNP_5" High="1.00139" Low="1.00188" />
+    <OverallSys Name="JET_JER_EffectiveNP_6" High="1.00442" Low="1.00885" />
+    <OverallSys Name="JET_JER_EffectiveNP_7" High="1.00155" Low="1.00138" />
+    <OverallSys Name="JET_JER_EffectiveNP_8" High="1.00531" Low="0.9972" />
+    <OverallSys Name="JET_JER_EffectiveNP_9" High="1.00193" Low="1.00057" />
+    <OverallSys Name="JET_JvtEfficiency" High="0.99927" Low="0.99907" />
+    <OverallSys Name="JET_Pileup_OffsetMu" High="1.00055" Low="1.00121" />
+    <OverallSys Name="JET_Pileup_OffsetNPV" High="1.00189" Low="0.99737" />
+    <OverallSys Name="JET_Pileup_PtTerm" High="0.99927" Low="0.99611" />
+    <OverallSys Name="JET_Pileup_RhoTopology" High="0.99965" Low="0.9996" />
+    <OverallSys Name="MET_SoftTrk_ResoPara" High="1.00061" Low="0.99939" />
+    <OverallSys Name="MET_SoftTrk_ResoPerp" High="1.0015" Low="0.9985" />
+    <OverallSys Name="MET_SoftTrk_Scale" High="0.99825" Low="1.00385" />
+    <OverallSys Name="MUON_EFF_RECO_SYS" High="0.9987" Low="1.00128" />
+    <OverallSys Name="MUON_SAGITTA_RESBIAS" High="1.00095" Low="0.99905" />
+    <OverallSys Name="MUON_SCALE" High="1.00014" Low="1.00039" />
+    <OverallSys Name="TAUS_TRUEHADTAU_EFF_JETID_SYST" High="0.99743" Low="1.00257" />
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+    <OverallSys Name="ttbar_combined_Sys" High="1.09228" Low="0.869722" />
+    <NormFactor Name="kttbar" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="singletop_500" HistoName="hsingletop_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR" High="1.02312" Low="0.97687" />
+    <OverallSys Name="EL_EFF_Iso_TOTAL_1NPCOR_PLUS_UNCOR" High="1.0027" Low="0.9973" />
+    <OverallSys Name="EL_EFF_Reco_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00159" Low="0.99841" />
+    <OverallSys Name="EL_EFF_Trigger_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00138" Low="0.99862" />
+    <OverallSys Name="FT_EFF_B_systematics" High="0.964185" Low="1.03642" />
+    <OverallSys Name="FT_EFF_C_systematics" High="0.998094" Low="1.00191" />
+    <OverallSys Name="FT_EFF_Light_systematics" High="0.997773" Low="1.00223" />
+    <OverallSys Name="FT_EFF_extrapolation" High="0.990076" Low="1.01023" />
+    <OverallSys Name="JET_EffectiveNP_Detector1" High="1.00172" Low="0.99853" />
+    <OverallSys Name="JET_EffectiveNP_Mixed1" High="1.01729" Low="0.97683" />
+    <OverallSys Name="JET_EffectiveNP_Mixed2" High="0.99688" Low="1.0013" />
+    <OverallSys Name="JET_EffectiveNP_Mixed3" High="1.00024" Low="0.99853" />
+    <OverallSys Name="JET_EffectiveNP_Modelling1" High="1.00787" Low="0.98766" />
+    <OverallSys Name="JET_EffectiveNP_Modelling2" High="1.00534" Low="0.99684" />
+    <OverallSys Name="JET_EffectiveNP_Modelling3" High="1.0002" Low="1.00019" />
+    <OverallSys Name="JET_EffectiveNP_Modelling4" High="0.9997" Low="0.99859" />
+    <OverallSys Name="JET_EffectiveNP_Statistical1" High="1.00444" Low="0.99905" />
+    <OverallSys Name="JET_EffectiveNP_Statistical2" High="1.00073" Low="0.99775" />
+    <OverallSys Name="JET_EffectiveNP_Statistical3" High="0.9989" Low="1.00089" />
+    <OverallSys Name="JET_EffectiveNP_Statistical4" High="0.9995" Low="0.99851" />
+    <OverallSys Name="JET_EffectiveNP_Statistical5" High="0.99899" Low="0.99928" />
+    <OverallSys Name="JET_EffectiveNP_Statistical6" High="1.00038" Low="0.99844" />
+    <OverallSys Name="JET_EtaIntercalibration_Modelling" High="1.00287" Low="0.99523" />
+    <OverallSys Name="JET_EtaIntercalibration_TotalStat" High="0.99931" Low="1.00212" />
+    <OverallSys Name="JET_Flavor_Composition" High="1.00832" Low="0.99935" />
+    <OverallSys Name="JET_Flavor_Response" High="0.99615" Low="1.0085" />
+    <OverallSys Name="JET_JER_EffectiveNP_1" High="1.00532" Low="0.99468" />
+    <OverallSys Name="JET_JER_EffectiveNP_10" High="1.00551" Low="1.00104" />
+    <OverallSys Name="JET_JER_EffectiveNP_11" High="0.99816" Low="1.01172" />
+    <OverallSys Name="JET_JER_EffectiveNP_12restTerm" High="1.00023" Low="0.99977" />
+    <OverallSys Name="JET_JER_EffectiveNP_2" High="1.0055" Low="1.00639" />
+    <OverallSys Name="JET_JER_EffectiveNP_3" High="1.00792" Low="1.01088" />
+    <OverallSys Name="JET_JER_EffectiveNP_4" High="1.00038" Low="1.00252" />
+    <OverallSys Name="JET_JER_EffectiveNP_5" High="0.99652" Low="1.00473" />
+    <OverallSys Name="JET_JER_EffectiveNP_6" High="1.00091" Low="1.001" />
+    <OverallSys Name="JET_JER_EffectiveNP_7" High="1.00045" Low="1.00136" />
+    <OverallSys Name="JET_JER_EffectiveNP_8" High="1.0019" Low="0.99727" />
+    <OverallSys Name="JET_JvtEfficiency" High="1.0001" Low="0.99893" />
+    <OverallSys Name="JET_Pileup_OffsetMu" High="1.00384" Low="0.99916" />
+    <OverallSys Name="JET_Pileup_OffsetNPV" High="1.00559" Low="1.0013" />
+    <OverallSys Name="JET_Pileup_PtTerm" High="1.00465" Low="0.99897" />
+    <OverallSys Name="JET_Pileup_RhoTopology" High="0.99519" Low="1.00088" />
+    <OverallSys Name="JET_PunchThrough_MC16" High="1.00127" Low="0.99874" />
+    <OverallSys Name="MET_SoftTrk_ResoPara" High="1.00522" Low="0.99478" />
+    <OverallSys Name="MET_SoftTrk_ResoPerp" High="1.00294" Low="0.99706" />
+    <OverallSys Name="MET_SoftTrk_Scale" High="1.00032" Low="0.99875" />
+    <OverallSys Name="MUON_EFF_RECO_SYS" High="0.99854" Low="1.00144" />
+    <OverallSys Name="MUON_SAGITTA_RESBIAS" High="1.00161" Low="0.99839" />
+    <OverallSys Name="TAUS_TRUEHADTAU_EFF_JETID_SYST" High="0.99702" Low="1.00298" />
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+    <OverallSys Name="singletop_combined_Sys" High="1.67072" Low="0.323" />
+    <NormFactor Name="kSingleTop" Val="1" High="5" Low="0" Const="False" />
+  </Sample>
+
+  <Sample Name="diboson_500" HistoName="hdiboson_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="EG_SCALE_ALL" High="0.99411" Low="1.00752" />
+    <OverallSys Name="EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR" High="1.02172" Low="0.97827" />
+    <OverallSys Name="EL_EFF_Iso_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00255" Low="0.99745" />
+    <OverallSys Name="EL_EFF_Reco_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00161" Low="0.99839" />
+    <OverallSys Name="EL_EFF_Trigger_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00162" Low="0.99838" />
+    <OverallSys Name="FT_EFF_B_systematics" High="0.99888" Low="1.00113" />
+    <OverallSys Name="FT_EFF_C_systematics" High="0.99704" Low="1.00297" />
+    <OverallSys Name="FT_EFF_Light_systematics" High="0.99598" Low="1.00402" />
+    <OverallSys Name="FT_EFF_extrapolation" High="0.99591" Low="1.00409" />
+    <OverallSys Name="JET_EffectiveNP_Detector1" High="1.00182" Low="0.99859" />
+    <OverallSys Name="JET_EffectiveNP_Mixed1" High="1.01562" Low="0.98819" />
+    <OverallSys Name="JET_EffectiveNP_Mixed2" High="0.99673" Low="1.00467" />
+    <OverallSys Name="JET_EffectiveNP_Modelling1" High="1.01962" Low="0.98374" />
+    <OverallSys Name="JET_EffectiveNP_Modelling2" High="1.00687" Low="0.99387" />
+    <OverallSys Name="JET_EffectiveNP_Modelling3" High="0.99851" Low="1.00141" />
+    <OverallSys Name="JET_EffectiveNP_Modelling4" High="1.00141" Low="0.9988" />
+    <OverallSys Name="JET_EffectiveNP_Statistical1" High="1.00491" Low="0.99627" />
+    <OverallSys Name="JET_EffectiveNP_Statistical2" High="1.00198" Low="0.99844" />
+    <OverallSys Name="JET_EffectiveNP_Statistical3" High="0.99794" Low="1.00372" />
+    <OverallSys Name="JET_EffectiveNP_Statistical4" High="0.99951" Low="1.00202" />
+    <OverallSys Name="JET_EffectiveNP_Statistical5" High="1.00025" Low="1.00066" />
+    <OverallSys Name="JET_EffectiveNP_Statistical6" High="1.0012" Low="0.9993" />
+    <OverallSys Name="JET_EtaIntercalibration_Modelling" High="1.00379" Low="0.99736" />
+    <OverallSys Name="JET_EtaIntercalibration_TotalStat" High="1.00064" Low="0.9983" />
+    <OverallSys Name="JET_Flavor_Composition" High="1.01032" Low="0.99223" />
+    <OverallSys Name="JET_Flavor_Response" High="0.9906" Low="1.01202" />
+    <OverallSys Name="JET_JER_DataVsMC_MC16" High="1.00062" Low="0.99938" />
+    <OverallSys Name="JET_JER_EffectiveNP_1" High="1.00284" Low="0.99716" />
+    <OverallSys Name="JET_JER_EffectiveNP_10" High="0.99965" Low="1.00348" />
+    <OverallSys Name="JET_JER_EffectiveNP_11" High="0.99963" Low="1.00233" />
+    <OverallSys Name="JET_JER_EffectiveNP_12restTerm" High="1.0008" Low="0.9992" />
+    <OverallSys Name="JET_JER_EffectiveNP_2" High="0.99898" Low="1.0038" />
+    <OverallSys Name="JET_JER_EffectiveNP_3" High="0.99541" Low="1.00726" />
+    <OverallSys Name="JET_JER_EffectiveNP_4" High="1.00065" Low="1.00042" />
+    <OverallSys Name="JET_JER_EffectiveNP_5" High="1.00397" Low="0.99774" />
+    <OverallSys Name="JET_JER_EffectiveNP_6" High="0.99783" Low="1.00194" />
+    <OverallSys Name="JET_JER_EffectiveNP_7" High="1.00375" Low="0.99898" />
+    <OverallSys Name="JET_JER_EffectiveNP_8" High="1.00051" Low="1.00031" />
+    <OverallSys Name="JET_JER_EffectiveNP_9" High="1.00205" Low="0.99908" />
+    <OverallSys Name="JET_JvtEfficiency" High="1.00057" Low="0.99895" />
+    <OverallSys Name="JET_Pileup_OffsetNPV" High="1.00542" Low="0.99715" />
+    <OverallSys Name="JET_Pileup_PtTerm" High="1.00206" Low="0.99837" />
+    <OverallSys Name="JET_Pileup_RhoTopology" High="1.00521" Low="0.99619" />
+    <OverallSys Name="MET_SoftTrk_ResoPara" High="0.99844" Low="1.00156" />
+    <OverallSys Name="MET_SoftTrk_ResoPerp" High="1.00244" Low="0.99756" />
+    <OverallSys Name="MET_SoftTrk_Scale" High="1.00261" Low="1.00161" />
+    <OverallSys Name="MUON_EFF_RECO_SYS" High="0.99895" Low="1.00104" />
+    <OverallSys Name="PRW_DATASF" High="0.99877" Low="1.00174" />
+    <OverallSys Name="TAUS_TRUEHADTAU_EFF_JETID_SYST" High="0.99741" Low="1.00259" />
+    <OverallSys Name="diboson_Sys" High="1.2172" Low="0.792527" />
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+  </Sample>
+
+  <Sample Name="WenuVBF_500" HistoName="hWenuVBF_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="EG_RESOLUTION_ALL" High="0.99977" Low="0.99971" />
+    <OverallSys Name="EG_SCALE_ALL" High="0.99347" Low="1.00526" />
+    <OverallSys Name="EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR" High="1.02084" Low="0.97916" />
+    <OverallSys Name="EL_EFF_Iso_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00241" Low="0.99759" />
+    <OverallSys Name="EL_EFF_Reco_TOTAL_1NPCOR_PLUS_UNCOR" High="1.00158" Low="0.99842" />
+    <OverallSys Name="EL_EFF_Trigger_TOTAL_1NPCOR_PLUS_UNCOR" High="1.0015" Low="0.9985" />
+    <OverallSys Name="FT_EFF_B_systematics" High="0.99595" Low="1.00406" />
+    <OverallSys Name="FT_EFF_C_systematics" High="0.99863" Low="1.00137" />
+    <OverallSys Name="FT_EFF_Light_systematics" High="0.99571" Low="1.0043" />
+    <OverallSys Name="FT_EFF_extrapolation" High="0.99636" Low="1.00364" />
+    <OverallSys Name="JET_EffectiveNP_Detector1" High="1.00197" Low="0.99902" />
+    <OverallSys Name="JET_EffectiveNP_Mixed1" High="1.01358" Low="0.98716" />
+    <OverallSys Name="JET_EffectiveNP_Mixed2" High="0.9974" Low="1.00217" />
+    <OverallSys Name="JET_EffectiveNP_Mixed3" High="1.00047" Low="0.99986" />
+    <OverallSys Name="JET_EffectiveNP_Modelling1" High="1.01783" Low="0.98318" />
+    <OverallSys Name="JET_EffectiveNP_Modelling2" High="1.00593" Low="0.99435" />
+    <OverallSys Name="JET_EffectiveNP_Modelling3" High="0.99844" Low="1.00145" />
+    <OverallSys Name="JET_EffectiveNP_Modelling4" High="1.00146" Low="0.99939" />
+    <OverallSys Name="JET_EffectiveNP_Statistical1" High="1.00459" Low="0.99648" />
+    <OverallSys Name="JET_EffectiveNP_Statistical2" High="1.00152" Low="0.99894" />
+    <OverallSys Name="JET_EffectiveNP_Statistical3" High="0.99805" Low="1.00158" />
+    <OverallSys Name="JET_EffectiveNP_Statistical4" High="0.99915" Low="1.00121" />
+    <OverallSys Name="JET_EffectiveNP_Statistical5" High="0.99974" Low="1.00046" />
+    <OverallSys Name="JET_EffectiveNP_Statistical6" High="1.00113" Low="0.99946" />
+    <OverallSys Name="JET_EtaIntercalibration_Modelling" High="1.00872" Low="0.99257" />
+    <OverallSys Name="JET_EtaIntercalibration_NonClosure_highE" High="1.00002" Low="0.99998" />
+    <OverallSys Name="JET_EtaIntercalibration_NonClosure_posEta" High="1.00013" Low="1.00003" />
+    <OverallSys Name="JET_EtaIntercalibration_TotalStat" High="1.00123" Low="0.99933" />
+    <OverallSys Name="JET_Flavor_Composition" High="1.0183" Low="0.9839" />
+    <OverallSys Name="JET_Flavor_Response" High="0.98626" Low="1.01486" />
+    <OverallSys Name="JET_JER_DataVsMC_MC16" High="1.00255" Low="0.99745" />
+    <OverallSys Name="JET_JER_EffectiveNP_1" High="1.0004" Low="0.9996" />
+    <OverallSys Name="JET_JER_EffectiveNP_10" High="1.00431" Low="0.99979" />
+    <OverallSys Name="JET_JER_EffectiveNP_11" High="1.00065" Low="1.00156" />
+    <OverallSys Name="JET_JER_EffectiveNP_12restTerm" High="1.00337" Low="0.99663" />
+    <OverallSys Name="JET_JER_EffectiveNP_2" High="0.99893" Low="1.00228" />
+    <OverallSys Name="JET_JER_EffectiveNP_3" High="1.00013" Low="1.00242" />
+    <OverallSys Name="JET_JER_EffectiveNP_4" High="0.99991" Low="0.99923" />
+    <OverallSys Name="JET_JER_EffectiveNP_5" High="1.00144" Low="0.99805" />
+    <OverallSys Name="JET_JER_EffectiveNP_6" High="0.99957" Low="1.00218" />
+    <OverallSys Name="JET_JER_EffectiveNP_7" High="1.00038" Low="0.99895" />
+    <OverallSys Name="JET_JER_EffectiveNP_8" High="1.00337" Low="0.99992" />
+    <OverallSys Name="JET_JER_EffectiveNP_9" High="1.00019" Low="0.99939" />
+    <OverallSys Name="JET_JvtEfficiency" High="1.00087" Low="0.999" />
+    <OverallSys Name="JET_Pileup_OffsetMu" High="1.00116" Low="0.99847" />
+    <OverallSys Name="JET_Pileup_OffsetNPV" High="1.00256" Low="0.99845" />
+    <OverallSys Name="JET_Pileup_PtTerm" High="1.00213" Low="0.99712" />
+    <OverallSys Name="JET_Pileup_RhoTopology" High="1.00439" Low="0.99561" />
+    <OverallSys Name="JET_PunchThrough_MC16" High="1.00011" Low="0.99986" />
+    <OverallSys Name="MET_SoftTrk_ResoPara" High="1.0028" Low="0.9972" />
+    <OverallSys Name="MET_SoftTrk_ResoPerp" High="1.00095" Low="0.99905" />
+    <OverallSys Name="MET_SoftTrk_Scale" High="1.002" Low="0.99859" />
+    <OverallSys Name="PRW_DATASF" High="0.99486" Low="1.00472" />
+    <OverallSys Name="VBF_theo_sys" High="1.32332" Low="0.775826" />
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+  </Sample>
+
+  <Sample Name="WmunuVBF_500" HistoName="hWmunuVBF_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+  </Sample>
+
+  <Sample Name="WtaunuVBF_500" HistoName="hWtaunuVBF_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+  </Sample>
+
+  <Sample Name="ZeeVBF_500" HistoName="hZeeVBF_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+  </Sample>
+
+  <Sample Name="ZtautauVBF_500" HistoName="hZtautauVBF_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+  </Sample>
+
+  <Sample Name="ZnunuVBF_500" HistoName="hZnunuVBF_500Nom_CR1e0b_500_obs_cuts" InputFile="data/ShapeFit_std_CRFit_3kfactors_XXXX.root" NormalizeByTheory="True">
+    <StatError Activate="True"/>
+    <OverallSys Name="lumiSys" High="1.017" Low="0.983" />
+  </Sample>
+
+</Channel>
